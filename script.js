@@ -85,4 +85,3 @@ $(document).ready(function () {
     }
     $('form[name="submit-to-google-sheet"]').submit(submitForm);
   });
-  

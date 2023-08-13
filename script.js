@@ -62,26 +62,4 @@ $(document).ready(function () {
         }
       }
     });
-    function submitForm(event) {
-        event.preventDefault();
-        var formData = new FormData(event.target);
-        var data = {};
-        formData.forEach(function (value, key) {
-            data[key] = value;
-        });
-        fetch('https://script.google.com/macros/s/AKfycbxMoTEm6pi9h3xb2KKO9tRMCs1f-tuIDffK1jpT07kMlVY2YOkc7hQXMMZEMDOLDq9x/exec', {
-            method: 'POST',
-            body: JSON.stringify(data),
-            headers: {
-                'Content-Type': 'application/json',
-            },
-        })
-        .then(function (response) {
-            console.log('Form data sent successfully.');
-        })
-        .catch(function (error) {
-            console.error('Error sending form data:', error);
-        });
-    }
-    $('form[name="submit-to-google-sheet"]').submit(submitForm);
   });

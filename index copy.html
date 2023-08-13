@@ -224,7 +224,7 @@
                 <div class="column right">
                     
                     <div class="text">Message me</div>
-                    <form name="submit-to-google-sheet" onsubmit="sendEmail(); reset(); return false">
+                    <form name="submit-to-google-sheet" onsubmit="sobmitForm(event)" action="#">
                         <div class="fields">
                             <div class="field name">
                                 <input name="Name" type="text" placeholder="Name" required>
@@ -287,22 +287,6 @@
         </div>
         <span>Created By <a href="https://www.codingnepalweb.com">Tanmay Agarwal</a> | <span class="far fa-copyright"></span> 2023 All rights reserved.</span>
     </footer>
-    <script src="https://smtpjs.com/v3/smtp.js"></script>
-    <script>
-        function sendEmail(){
-            Email.send({
-                Host : "smtp.elasticemail.com",
-                Username : "tanmay10agarwal@gmail.com",
-                Password : "8AD613438960B423858BF47E5FCB19835EAB",
-                To : 'example1010example1010@gmail.com',
-                From : "tanmay10agarwal@gmail.com",
-                Subject : "This is the subject",
-                Body : "And this is the body"
-            }).then(
-                message => alert(message)
-            );
-        }
-    </script>
     <script src="./script.js"></script>
 </body>
 </html>

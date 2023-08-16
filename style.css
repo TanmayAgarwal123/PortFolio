@@ -202,6 +202,7 @@ section .title::after{
     font-size: 25px;
     padding: 12px 36px;
     margin-top: 20px;
+    margin-right: 10px;
     font-weight: 400;
     border-radius: 6px;
     border: 2px solid crimson;
@@ -210,6 +211,7 @@ section .title::after{
 .home .home-content a:hover{
     color: crimson;
     background: none;
+    transform: scale(1.05);
 }
 
 /* about section styling */
@@ -254,6 +256,7 @@ section .title::after{
 .about .about-content .right a:hover{
     color: crimson;
     background: none;
+    transform: scale(1.1);
 }
 
 /* services section styling */
@@ -281,12 +284,13 @@ section .title::after{
 }
 .services .serv-content .card:hover{
     background: crimson;
+    transform: scale(1.05);
 }
 .services .serv-content .card .box{
     transition: all 0.3s ease;
 }
 .services .serv-content .card:hover .box{
-    transform: scale(1.05);
+    transform: scale(1.1);
 }
 .services .serv-content .card i{
     font-size: 50px;
@@ -333,6 +337,7 @@ section .title::after{
 .skills .skills-content .left a:hover{
     color: crimson;
     background: none;
+    transform: scale(1.1);
 }
 .skills .skills-content .right .bars{
     margin-bottom: 15px;
